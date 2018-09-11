@@ -29,6 +29,10 @@ router.get('/formulario', function(req, res, next) {
     });
 });
 
+router.get('/last', function(req, res, next) {  
+    res.json(b.getLatestBlock());
+});
+
 
 router.post("/formulario/respuesta", function(req, res, next) {
     let nombre = req.body.nombre;

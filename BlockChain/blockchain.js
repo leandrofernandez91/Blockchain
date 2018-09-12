@@ -2,7 +2,7 @@ var Block = require('./Block.js');
 class Blockchain{
     constructor(){
         this.chain = [this.createGenesisBlock()];
-        this.difficulty = 4;
+        this.difficulty = 1;
     
     }
     createGenesisBlock(){
